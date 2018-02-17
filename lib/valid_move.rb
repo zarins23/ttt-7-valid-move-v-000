@@ -1,5 +1,5 @@
 def valid_move?(board, index)
-  if board[index] == false || board[index] == nil
+  if position_taken?(board[index]) == false || position_taken?(board[index]) == nil
     false
   else position_taken?.between?(0, 8)
     true
